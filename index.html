@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recetario Web</h1>
+    </header>
+    
+    <main>
+        <section id="form-section">
+            <h2>Agregar nueva receta</h2>
+            <form id="recipe-form">
+                <input type="text" id="recipe-name" placeholder="Nombre de la receta" required>
+                <textarea id="recipe-ingredients" placeholder="Ingredientes" required></textarea>
+                <textarea id="recipe-steps" placeholder="Pasos a seguir" required></textarea>
+                <button type="submit">Agregar receta</button>
+            </form>
+        </section>
+
+        <section id="recipe-list">
+            <h2>Lista de recetas</h2>
+            <ul id="recipes">
+                <!-- Las recetas se añadirán aquí -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
